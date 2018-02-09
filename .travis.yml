@@ -1,5 +1,6 @@
 language: cpp
 sudo: required
+dist: xenial
 compiler: gcc
 env: QT_BASE="510"
 cache: bundler
