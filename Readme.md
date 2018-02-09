@@ -1,5 +1,6 @@
 # Qt5.10 多语言动态翻译
 
+[![Build Status](https://travis-ci.org/wentaojia2014/I18n.svg?branch=master)](https://travis-ci.org/wentaojia2014/I18n)
 * 不需要重启程序 *
 
 ![I18n](I18n.gif)
