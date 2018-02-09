@@ -14,6 +14,7 @@ qmake && make -j8 && ./I18n
 1. qml 中使用qsTr 标记要翻译的文本
 
 2. 在pro中添加翻译文件ts,例如：
+
 ```
 TRANSLATIONS += I18n_zh.ts \
         I18n_en.ts
@@ -24,14 +25,15 @@ TRANSLATIONS += I18n_zh.ts \
 
 5. 使用lrelease，（通过命令行，qtcreator 或者 linguist）,生成qm文件。
 
-
-ts文件是xml格式的文本，qm文件是对其压缩过的二进制格式。两者都可以使用linguist导入
+    ts文件是xml格式的文本，qm文件是对其压缩过的二进制格式。两者都可以使用linguist导入
 
 6. qm文件放入运行路径，或者加入qrc资源
 
-7. 使用QTranslator加载qm文件并安装到QCoreApplication
+7. 使用QTranslator加载qm文件
 
+8. 在需要切换语言的地方，切换Translater，并触发QQmlEngine::retranslate
 
-8. 在需要切换语言的地方，调用reTrans，并触发QQmlEngine::retranslate
+QCoreApplication::removeTranslator
+QCoreApplication::installTranslator
 
 
