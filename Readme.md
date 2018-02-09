@@ -34,6 +34,7 @@ TRANSLATIONS += I18n_zh.ts \
 8. 在需要切换语言的地方，切换Translater，并触发QQmlEngine::retranslate
 
 QCoreApplication::removeTranslator
+
 QCoreApplication::installTranslator
 
 
