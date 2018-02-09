@@ -1,0 +1,17 @@
+language: cpp
+sudo: required
+compiler: gcc
+env: QT_BASE="510"
+cache: bundler
+group: deprecated-2017Q4
+before_install:
+    - sudo add-apt-repository ppa:beineri/opt-qt-5.10.0-xenial -y;
+    - sudo apt-get update -qq;
+install:
+    - sudo apt-get install -qq qt510-meta-minimal; source /opt/qt510/bin/qt510-env.sh;
+
+script:
+    - qmake
+    - make
+notifications:
+    email: false

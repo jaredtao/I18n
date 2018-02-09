@@ -5,6 +5,9 @@
 ![I18n](I18n.gif)
 ### 编译运行
 
+qmake && make -j8 && ./I18n
+
+或者使用qtcreator导入pro并运行
 
 ###  翻译步骤整理
 1. qml 中使用qsTr 标记要翻译的文本
