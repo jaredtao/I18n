@@ -9,7 +9,7 @@ before_install:
     - sudo add-apt-repository ppa:beineri/opt-qt-5.11.1-xenial -y;
     - sudo apt-get update -qq;
 install:
-    - sudo apt-get install -qq qt511-meta-minimal; source /opt/qt511/bin/qt511-env.sh;
+    - sudo apt-get install -qq qt511-meta-full; source /opt/qt511/bin/qt511-env.sh;
 
 script:
     - qmake
